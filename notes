@@ -1,0 +1,20 @@
+important crud methord
+we already saw the read methods 
+
+
+
+insert 
+insertorIgnore // retur false if data not insert also check the unique column
+upsert 
+insertGetId // return id instead of true and false only work with id column exists in table also auto increment enable
+
+
+for update we can use
+we check conditioin first if condition match then update otherwise insert new record
+
+->where('id',5)
+->update(['name'=>'new name'] )
+
+updateOrInsert  // if record found with condition then update otherwise insert new record
+increment() // increase the value of specific column and should be interger
+
